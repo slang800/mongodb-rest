@@ -1,16 +1,16 @@
-/* 
+/*
     server.js
     mongodb-rest
 
     Created by Tom de Grunt on 2010-10-03.
     Copyright (c) 2010 Tom de Grunt.
 		This file is part of mongodb-rest.
-*/ 
+*/
 
 var fs = require("fs"),
 		util = require('util'),
 		express = require('express');
-		
+
 var config = { "db": {
   'port': 27017,
   'host': "localhost"
@@ -40,11 +40,11 @@ app.configure(function(){
     app.use(express.logger());
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
-	
+
 	if (config.accessControl){
 		var accesscontrol = require('./lib/accesscontrol');
 		app.use(accesscontrol.handle);
-	}	
+	}
 });
 
 require('./lib/main');

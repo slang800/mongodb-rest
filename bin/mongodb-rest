@@ -6,6 +6,3 @@
 var sys = require('sys'),
     fs = require('fs'),
 		mongodbrest = require('../server');
-		
-
-
