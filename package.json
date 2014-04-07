@@ -28,6 +28,7 @@
     "rest",
     "restful"
   ],
+  "license": "LGPL-3.0",
   "repository": "git://github.com/tdegrunt/mongodb-rest",
   "directories": {
     "lib": "./lib"
